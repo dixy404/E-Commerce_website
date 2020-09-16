@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 90%;
+  /* column-gap: 4%; */
+  grid-template-areas:
+    "navigation navigation"
+    "section1 section2 ";
+
+  height: 100vh;
+  width: 100%;
+}
+
+.navigation {
+  grid-area: navigation;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas: "nav1 nav2 nav3";
+  background-color: coral;
+}
+
+.nav-logo {
+  grid-area: nav1;
+  background-color: blue;
+}
+
+.nav-content {
+  grid-area: nav2;
+  background-color: rgb(78, 78, 243);
+}
+
+.nav-cart {
+  grid-area: nav3;
+  background-color: rgb(90, 90, 240);
+}
+
+#section1 {
+  grid-area: section1;
+  background-color: red;
+}
+
+#section2 {
+  grid-area: section2;
+  background-color: rgb(240, 90, 90);
+}
