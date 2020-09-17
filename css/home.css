@@ -1,14 +1,23 @@
+@font-face {
+  font-family: RussoOne;
+  src: url("RussoOne-Regular.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: RussoOne !important;
+  background-color: #e4e9ef;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 10% 90%;
-  /* column-gap: 4%; */
   grid-template-areas:
     "navigation navigation"
     "section1 section2 ";
@@ -22,30 +31,107 @@
   display: grid;
   grid-template-columns: 25% 50% 25%;
   grid-template-areas: "nav1 nav2 nav3";
-  background-color: coral;
 }
 
 .nav-logo {
   grid-area: nav1;
-  background-color: blue;
+  background-image: url("/images/logo_1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 100px;
 }
 
 .nav-content {
   grid-area: nav2;
-  background-color: rgb(78, 78, 243);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-content a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 17px;
+}
+
+.nav-content a:hover {
+  color: #d7287e;
 }
 
 .nav-cart {
   grid-area: nav3;
-  background-color: rgb(90, 90, 240);
+  display: flex;
+  align-items: center;
+}
+
+.nav-cart .cart-quantity {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 7px;
+  margin-left: 6px;
 }
 
 #section1 {
   grid-area: section1;
-  background-color: red;
+  align-self: center;
+  padding-left: 100px;
+}
+
+#section1 h1 {
+  color: #d7287e;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+#section1 p {
+  color: #d7287e;
+  font-size: 40px;
+}
+
+#section1 .btn {
+  margin-top: 50px;
+}
+
+.btn-primary,
+.btn-secondary {
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.8s ease;
+}
+
+.btn-primary {
+  background-color: #000000;
+  color: #ffffff;
+  border: 3px solid #000000;
+  padding: 10px 15px;
+}
+
+.btn-secondary {
+  background-color: #e4e9ef;
+  color: #000000;
+  border: 3px solid #000000;
+  padding: 10px 40px;
+  margin-left: 55px;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #d7287e;
+  color: #ffffff;
+  border: 3px solid #000000;
 }
 
 #section2 {
   grid-area: section2;
-  background-color: rgb(240, 90, 90);
+  background-image: url("/images/home_img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 35px;
+  margin-bottom: 50px;
 }
