@@ -35,9 +35,7 @@ body {
 
 .nav-logo {
   grid-area: nav1;
-  background-image: url("/images/logo_1.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+  align-self: center;
   margin-left: 100px;
 }
 
