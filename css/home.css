@@ -36,6 +36,7 @@ body {
 .nav-logo {
   grid-area: nav1;
   align-self: center;
+  margin-top: 4px;
   margin-left: 100px;
 }
 
@@ -132,4 +133,22 @@ body {
   background-position: center;
   margin-top: 35px;
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+    grid-template-areas:
+      "navigation"
+      "section1";
+  }
+  #section1 {
+    text-align: center;
+    padding: 0;
+  }
+  #section2 {
+    display: none;
+  }
 }
