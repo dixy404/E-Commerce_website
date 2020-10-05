@@ -20,3 +20,13 @@ window.onclick = function (event) {
   document.getElementById("womanDropdown").classList.remove("show");
   document.getElementById("childDropdown").classList.remove("show");
 };
+
+//Responsive mega menu
+function megaFunction() {
+  var x = document.getElementById("mega-menu");
+  if (x.className === "nav-content") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav-content";
+  }
+}
