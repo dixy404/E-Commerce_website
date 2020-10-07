@@ -19,9 +19,8 @@
 
         <div class="nav-content" id="mega-menu">
           <div class="dropdown" id="first-dropdown">
-            <button onclick="myFunction(event)" class="dropbtn">
-              Muškarci &#9660;
-            </button>
+            <!-- <button onclick="myFunction(event)" class="dropbtn"> -->
+            <button class="dropbtn" id="btnMan">Muškarci &#9660;</button>
             <div id="manDropdown" class="dropdown-content">
               <div class="row">
                 <div class="column" id="img-man"></div>
@@ -49,9 +48,8 @@
             </div>
           </div>
           <div class="dropdown">
-            <button onclick="myFunction2(event)" class="dropbtn">
-              Žene &#9660;
-            </button>
+            <!--  <button onclick="myFunction2(event)" class="dropbtn"> -->
+            <button class="dropbtn" id="btnWoman">Žene &#9660;</button>
             <div id="womanDropdown" class="dropdown-content">
               <div class="row">
                 <div class="column" id="img-woman"></div>
@@ -79,9 +77,8 @@
             </div>
           </div>
           <div class="dropdown">
-            <button onclick="myFunction3(event)" class="dropbtn">
-              Djeca &#9660;
-            </button>
+            <!--  <button onclick="myFunction3(event)" class="dropbtn"> -->
+            <button class="dropbtn" id="btnChild">Djeca &#9660;</button>
             <div id="childDropdown" class="dropdown-content">
               <div class="row">
                 <div class="column" id="img-child"></div>
@@ -109,7 +106,8 @@
             </div>
           </div>
           <a href="#">Sniženo</a>
-          <a href="javascript:void(0);" class="icon" onclick="megaFunction()">
+          <!--  <a href="javascript:void(0);" class="icon" onclick="megaFunction()"> -->
+          <a href="javascript:void(0);" class="icon" id="hamburgerIcon">
             &#9776;
           </a>
         </div>
