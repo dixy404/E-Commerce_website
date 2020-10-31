@@ -89,7 +89,7 @@ body {
   background-color: #e4e9ef;
   width: 100%;
   left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -119,19 +119,19 @@ body {
 }
 
 #img-man {
-  background-image: url("/images/menu-man.jpg");
+  background-image: url("../images/menu-man.jpg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #img-woman {
-  background-image: url("/images/menu-woman.jpg");
+  background-image: url("../images/menu-woman.jpg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #img-child {
-  background-image: url("/images/menu-child.jpg");
+  background-image: url("../images/menu-child.jpg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -287,7 +287,7 @@ body {
 
 #section2 {
   grid-area: section2;
-  background-image: url("/images/home_img.png");
+  background-image: url("../images/home_img.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
